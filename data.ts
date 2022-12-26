@@ -70,11 +70,25 @@ export const contents: Content[] = [
     author: "김효헌",
     img: '/images/thumbnail-9.png'
   },
-  // {
-  //   title: "give me the toilet!",
-  //   desc: "길 한복판에서 화장실이 가고 싶다면? 난감한 상황에서 주변 공중화장실 위치를 빠르게 알려주는 서비스입니다.",
-  //   link: "",
-  //   author: "나제원",
-  //   img: ''
-  // }
+  {
+    title: "Calculator.com",
+    desc: "hover 애니메이션 효과가 들어간 웹 계산기입니다.",
+    link: "https://drive.google.com/file/d/1YZfdTdzuWxnUnDnheDoVReA12LdSlAuR/view?usp=sharing",
+    author: "이기훈",
+    img: '/images/thumbnail-10.png'
+  },
+  {
+    title: "MYDAILY",
+    desc: "기록하고 싶은 날짜를 선택하여 누르면 캘린더에 일상을 기록할 수 있는 웹 사이트입니다.",
+    link: "https://drive.google.com/file/d/1Ize1AyComEH4gn64lb3u6Ih-se7oXYBX/view?usp=share_link",
+    author: "이혜린",
+    img: '/images/thumbnail-11.png'
+  },
+  {
+    title: "test",
+    desc: "test",
+    link: "",
+    author: "test",
+    img: 'https://cdn.pixabay.com/photo/2022/12/18/11/45/christmas-7663229_1280.jpg'
+  }
 ]
