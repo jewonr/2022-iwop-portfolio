@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import { Inter } from '@next/font/google'
-import styles from '../styles/Home.module.css'
 import styled from 'styled-components'
+import Link from 'next/link'
+import { Content, contents } from '../data'
 
 const Container = styled.div`
   width: 100%;
@@ -36,11 +36,12 @@ const Item = styled.div`
   display: flex;
   flex-direction: column;
   border-radius: 10px;
+  position: relative;
 `
 
 const Img = styled.img`
   width: 100%;
-  height: 250px;
+  height: 200px;
   border-radius: 10px 10px 0 0;
   object-fit: cover;
 `
@@ -49,16 +50,28 @@ const TextWrapper = styled.div`
   display: flex;
   flex-direction: column;
   padding: 20px;
+  gap: 8px;
 `
 
 const Title = styled.div`
   font-size: 20px;
+  font-weight: 600;
 `
 
 const Desc = styled.div`
   font-size: 15px;
   color: #BCBCBC;
 `
+
+const Author = styled.div`
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 15px;
+  color: #656565;
+`
+
+
 
 export default function Home() {
   return (
@@ -73,49 +86,18 @@ export default function Home() {
           <BigTitle>2022 IWOP PORTFOLIO</BigTitle>
         </TopWrapper>
         <ItemWrapper>
-          <Item>
-            <Img src='https://cdn.pixabay.com/photo/2021/11/29/15/01/christmas-6832802_640.jpg' />
-            <TextWrapper>
-              <Title>안녕</Title>
-              <Desc>안녕안녕안녕안녕안녕안녕안녕안녕안녕안녕안녕안녕</Desc>
-            </TextWrapper>
-          </Item>
-          <Item>
-            <Img src='https://cdn.pixabay.com/photo/2021/11/29/15/01/christmas-6832802_640.jpg' />
-            <TextWrapper>
-              <Title>안녕</Title>
-              <Desc>안녕안녕안녕안녕안녕안녕안녕안녕안녕안녕안녕안녕</Desc>
-            </TextWrapper>
-          </Item>
-          <Item>
-            <Img src='https://cdn.pixabay.com/photo/2021/11/29/15/01/christmas-6832802_640.jpg' />
-            <TextWrapper>
-              <Title>안녕</Title>
-              <Desc>안녕안녕안녕안녕안녕안녕안녕안녕안녕안녕안녕안녕</Desc>
-            </TextWrapper>
-          </Item>
-          <Item>
-            <Img src='https://cdn.pixabay.com/photo/2021/11/29/15/01/christmas-6832802_640.jpg' />
-            <TextWrapper>
-              <Title>안녕</Title>
-              <Desc>안녕안녕안녕안녕안녕안녕안녕안녕안녕안녕안녕안녕</Desc>
-            </TextWrapper>
-          </Item>
-          <Item>
-            <Img src='https://cdn.pixabay.com/photo/2021/11/29/15/01/christmas-6832802_640.jpg' />
-            <TextWrapper>
-              <Title>안녕</Title>
-              <Desc>안녕안녕안녕안녕안녕안녕안녕안녕안녕안녕안녕안녕</Desc>
-            </TextWrapper>
-          </Item>
-          <Item>
-            <Img src='https://cdn.pixabay.com/photo/2021/11/29/15/01/christmas-6832802_640.jpg' />
-            <TextWrapper>
-              <Title>안녕</Title>
-              <Desc>안녕안녕안녕안녕안녕안녕안녕안녕안녕안녕안녕안녕</Desc>
-            </TextWrapper>
-          </Item>
-          
+          {contents.map((content: Content, idx: number) => (
+            <Link href={content.link} target="_blank" key={idx}>
+              <Item>
+                <Img src={content.img} />
+                <TextWrapper>
+                  <Title>{content.title}</Title>
+                  <Desc>{content.desc}</Desc>
+                  <Author>{content.author}</Author>
+                </TextWrapper>
+              </Item>
+            </Link>
+          ))}
         </ItemWrapper>
       </Container>
     </>
