@@ -59,7 +59,7 @@ export const contents: Content[] = [
   { 
     title: "RE-HEART", 
     desc: "급할 때 찾기 힘든 자동제세동기의 위치를 지도 API 를 이용해 알려주는 웹사이트입니다.", 
-    link: "https://drive.google.com/drive/u/3/folders/119GgQFTw5a9BhVZjrbQM_eFy0UfUuile", 
+    link: "https://sen1014-my.sharepoint.com/personal/21sunrin097_sunrint_sen_hs_kr/_layouts/15/onedrive.aspx?id=%2Fpersonal%2F21sunrin097%5Fsunrint%5Fsen%5Fhs%5Fkr%2FDocuments%2FIWOP%20%EC%8B%9C%EC%97%B0%EC%98%81%EC%83%81%2FRE%5FHEART%20%E1%84%89%E1%85%B5%E1%84%8B%E1%85%A7%E1%86%AB%E1%84%8B%E1%85%A7%E1%86%BC%E1%84%89%E1%85%A1%E1%86%BC%2Emov&parent=%2Fpersonal%2F21sunrin097%5Fsunrint%5Fsen%5Fhs%5Fkr%2FDocuments%2FIWOP%20%EC%8B%9C%EC%97%B0%EC%98%81%EC%83%81", 
     author: "김송연",
     img: '/images/thumbnail-8.svg'
   },
@@ -69,5 +69,12 @@ export const contents: Content[] = [
     link: "https://drive.google.com/file/d/1MIyBnSdrrLc2qBwVuGREy4r_26AU8Dh3/view?usp=share_link",
     author: "김효헌",
     img: '/images/thumbnail-9.png'
-  }
+  },
+  // {
+  //   title: "give me the toilet!",
+  //   desc: "길 한복판에서 화장실이 가고 싶다면? 난감한 상황에서 주변 공중화장실 위치를 빠르게 알려주는 서비스입니다.",
+  //   link: "",
+  //   author: "나제원",
+  //   img: ''
+  // }
 ]
