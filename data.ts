@@ -67,7 +67,7 @@ export const contents: Content[] = [
     title: "inCommu",
     desc: "실시간으로 온라인 유저들과 소통, 토의, 질문을 채팅 형식으로 할 수 있는 커뮤니티 서비스 입니다.",
     link: "https://drive.google.com/file/d/1MIyBnSdrrLc2qBwVuGREy4r_26AU8Dh3/view?usp=share_link",
-    author: "김효헌",
+    author: "김효헌, 이기훈",
     img: '/images/thumbnail-9.png'
   },
   {
